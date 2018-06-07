@@ -9,9 +9,9 @@ function match_data(parent_file, children_file) {
     var parentList = JSON.parse(dataParents)
     
     //childern file
-    fs.readFile(children_file,'utf8',(err,dataChild)=>{
+    fs.readFile(children_file,'utf8',(err,dataChildern)=>{
       if(err) throw err
-      var childernList = JSON.parse(dataChild)
+      var childernList = JSON.parse(dataChildern)
       
       for(let i = 0; i < parentList.length; i++){
         var arrChildern = []
