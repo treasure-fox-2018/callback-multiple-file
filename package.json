@@ -9,6 +9,7 @@
   "author": "Windiana",
   "license": "ISC",
   "dependencies": {
+    "python": "0.0.4",
     "sleep": "^5.1.1"
   }
 }
