@@ -9,6 +9,7 @@
   "author": "Windiana",
   "license": "ISC",
   "dependencies": {
+    "nan": "^2.10.0",
     "sleep": "^5.1.1"
   }
 }
