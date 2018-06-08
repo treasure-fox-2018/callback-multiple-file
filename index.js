@@ -15,15 +15,15 @@ function match_data(parent_file, children_file) {
       sleep.sleep(5);
 
       for (var i = 0; i <= parent_data.length - 1; i++) {
-      var children = [];
-      for (var j = 0; j <= children_data.length - 1; j++) {
-        if (parent_data[i].last_name === children_data[j].family) {
-          children.push(children_data[j].full_name)
+        var children = [];
+        for (var j = 0; j <= children_data.length - 1; j++) {
+          if (parent_data[i].last_name === children_data[j].family) {
+           children.push(children_data[j].full_name)
+          }
         }
+        parent_data[i].childrens = children;
       }
-      parent_data[i].childrens = children;
-    }
-    console.log(parent_data)
+      console.log(parent_data)
     });
   });  
   
