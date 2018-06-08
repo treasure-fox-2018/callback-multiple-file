@@ -2,10 +2,8 @@ const fs = require('fs');
 var sleep = require('sleep');
 
 function match_data(parent_file, children_file) {
-  let parentData = [];
-  let childData = [];
   fs.readFile(parent_file, 'utf8',function(err,parentJSON) {
-    parentData = JSON.parse(parentJSON);
+    let parentData = JSON.parse(parentJSON);
     sleep.sleep(5);
     fs.readFile(children_file, 'utf8', function (err,childJSON) {
       let childData = JSON.parse(childJSON);
